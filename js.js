@@ -1,7 +1,3 @@
-
-
-
-
 // document.querySelector('#submit_button').addEventListener('click', contactLoad(backToCon));
 // function backToCon() {
 //     document.querySelector('.contact').scrollIntoView({ behavior: "smooth" });
@@ -124,7 +120,7 @@ function hideShowMenu() {
             arrow.style.marginBottom = '-10rem';
         }
     } else {
-        if (mediaQuery.matches) {
+        if (!mediaQuery.matches) {
             document.querySelector(".navbar").style.top = "-120px";
         }
         back.style.opacity = '.95';
