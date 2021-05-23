@@ -68,7 +68,7 @@ function menuDropDown() {
     mobileArrowIsVisible === false ? mobileArrowIsVisible = true : mobileArrowIsVisible = false;
     console.log(mobileArrowIsVisible);
     if (mobileArrowIsVisible) {
-        mobileMenu.style.top = '5.5rem';
+        mobileMenu.style.top = '5.4rem';
         mobileArrow.style.transform = 'rotate(0)';
         // document.querySelector('.menu_option').style.opacity = '.99';
     } else {
