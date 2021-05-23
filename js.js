@@ -48,6 +48,7 @@ let articleContent;
 let articlesContentWraper = document.createElement('div');
 articlesContentWraper.className = '.article_content_wraper';
 let mediaQuery = window.matchMedia('(min-width: 770px)');
+let menuMediaQuery = window.matchMedia('(max-width: 770px)');
 
 let LoremIpsum = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
 localStorage.setItem("vOneLocalStorage", articleList);
@@ -67,16 +68,16 @@ function menuDropDown() {
     mobileArrowIsVisible === false ? mobileArrowIsVisible = true : mobileArrowIsVisible = false;
     console.log(mobileArrowIsVisible);
     if (mobileArrowIsVisible) {
-        mobileMenu.style.translate = '0';
+        mobileMenu.style.top = '5.5rem';
         mobileArrow.style.transform = 'rotate(0)';
         // document.querySelector('.menu_option').style.opacity = '.99';
     } else {
-        if (mediaQuery.matches) {
-            mobileMenu.style.translate = '0 -30rem';
+        if (menuMediaQuery.matches) {
+            mobileMenu.style.top = '-25rem';
             mobileArrow.style.transform = 'rotate(180deg)';
         }
     }
-    console.log(mobileMenu.style.translate);
+    console.log(mobileMenu.style.translateY);
 }
 
 function vineyardVisibleArticleFade() {
