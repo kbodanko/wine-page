@@ -594,8 +594,8 @@ footer{
     background-size: cover;
 }
 .contact_bg{
-    height: 34.6rem;
-    margin-top: -34.6rem;
+    height: 33.2rem;
+    margin-top: -33.2rem;
     background-color: rgba(0, 0, 0, 0.75);
     z-index: -2;
 }
