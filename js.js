@@ -53,7 +53,7 @@ window.addEventListener('scroll', vineyardVisibleArticleFade);
 document.querySelector('.back_to_top_bg').addEventListener('click', scrollToTop);
 document.querySelector('#read_more_button').addEventListener('click', putArticle);
 document.querySelector('.menu').addEventListener('click', scrollToElement);
-document.querySelector('#submit_button').addEventListener('click', setContactBgHeight);
+// document.querySelector('#submit_button').addEventListener('click', setContactBgHeight);
 mobileArrow.addEventListener('click', menuDropDown);
 window.addEventListener('scroll', hideShowMenu);
 
