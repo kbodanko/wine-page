@@ -53,12 +53,19 @@ window.addEventListener('scroll', vineyardVisibleArticleFade);
 document.querySelector('.back_to_top_bg').addEventListener('click', scrollToTop);
 document.querySelector('#read_more_button').addEventListener('click', putArticle);
 document.querySelector('.menu').addEventListener('click', scrollToElement);
+document.querySelector('#submit_button').addEventListener('click', setContactBgHeight);
 mobileArrow.addEventListener('click', menuDropDown);
 window.addEventListener('scroll', hideShowMenu);
 
 fillMenu();
 putImage();
 eventListenerSet();
+
+function setContactBgHeight() {
+    let contactHeight = document.querySelector('.contact').style.height;
+    let contactBgHeight = document.querySelector('.contact_bg').style.height;
+    contactBgHeight = contactHeight;
+}
 
 function menuDropDown() {
     mobileArrowIsVisible === false ? mobileArrowIsVisible = true : mobileArrowIsVisible = false;
