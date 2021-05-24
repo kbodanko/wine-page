@@ -61,11 +61,7 @@ fillMenu();
 putImage();
 eventListenerSet();
 
-function setContactBgHeight() {
-    let contactHeight = document.querySelector('.contact').style.height;
-    let contactBgHeight = document.querySelector('.contact_bg').style.height;
-    contactBgHeight = contactHeight;
-}
+
 
 function menuDropDown() {
     mobileArrowIsVisible === false ? mobileArrowIsVisible = true : mobileArrowIsVisible = false;
