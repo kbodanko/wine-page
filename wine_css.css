@@ -594,14 +594,6 @@ footer{
     background-size: cover;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.54)) , url(contact_bg2.jpg);
 }
-.contact_bg{
-
-
-    /* height: 33.2rem;
-    margin-top: -33.2rem;
-    background-color: rgba(0, 0, 0, 0.75);
-    z-index: -2; */
-}
 .contact_details_box{
     color: white;
     display: flex;
@@ -1002,13 +994,6 @@ footer{
 .contact_wraper{
     margin: 3rem;
 }
-.contact, 
-.contact_bg{
-    height: 51.8rem;
-}
-/* .contact_bg{
-    margin-top: -51.8rem;
-} */
 .contact_details{
     display: flex;
     flex-direction: column;
@@ -1086,10 +1071,6 @@ footer{
     .offer_describe{
         margin: 1rem 0;
     }
-    /* .contact_bg {
-        height: 49.6rem;
-        margin-top: -49.6rem;
-    } */
     .contact_wraper{
         margin: 2rem 0;
     }
