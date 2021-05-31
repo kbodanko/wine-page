@@ -502,7 +502,7 @@ span{
     font-weight: 700;
     border: 1px solid rgb(160, 160, 160);
 }
-#read_more_button:active{
+.clicked_button:active{
     transform: translate(.35rem, .35rem)
 }
 #button_shadow{
@@ -1021,7 +1021,7 @@ footer{
     }
     .video_inscription{
         right: .5rem;
-        top: 6rem;
+        top: 7rem;
     }
     .about_us{
         margin-top: -4.5rem;
@@ -1052,6 +1052,9 @@ footer{
         width: 1.6rem;
         height: 1.2rem;
         top: 2.6rem;
+    }
+    .video_inscription{
+        top: 6rem;
     }
     .about_us {
         margin-top: -4.3rem;

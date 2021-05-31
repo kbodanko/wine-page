@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eztitles-video-info version-major="1" version-minor="1">
+  <video-file>red wine pouring.mp4</video-file>
+  <video-file-age>1383274113</video-file-age>
+  <video-file-size>5714174</video-file-size>
+  <time-code-points>
+    <allow-breaks>False</allow-breaks>
+    <points count="1">
+      <point frame="0" time-code="10:00:00:00"/>
+    </points>
+  </time-code-points>
+  <audio-graph-scale>0</audio-graph-scale>
+  <audio-track>-1</audio-track>
+  <audio-channel-playback>stereo</audio-channel-playback>
+  <mask-video-rect>false</mask-video-rect>
+  <crop-video>false</crop-video>
+</eztitles-video-info>
