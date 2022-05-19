@@ -590,7 +590,6 @@ footer{
     z-index: 2;
 }
 .contact{
-    background-image: url(contact_bg2.jpg);
     background-size: cover;
     background-image: linear-gradient(rgba(0, 0, 0, 0.501),rgba(37, 3, 44, 0.686)) , url(contact_bg2.jpg);
 }
@@ -650,6 +649,7 @@ footer{
     padding: 0 1rem 1rem 0;
     margin: 0;
 }
+
 /* .describe_mobile{
     display: none;
 } */

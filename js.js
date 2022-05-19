@@ -52,7 +52,7 @@ let LoremIpsum = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed d
 localStorage.setItem("vOneLocalStorage", articleList);
 
 window.addEventListener('scroll', vineyardVisibleArticleFade);
-document.querySelector('.back_to_top_bg').addEventListener('click', scrollToTop);
+back.addEventListener('click', scrollToTop);
 document.querySelector('#read_more_button').addEventListener('click', putArticle);
 document.querySelector('.menu').addEventListener('click', scrollToElement);
 // document.querySelector('#submit_button').addEventListener('click', setContactBgHeight);
@@ -62,7 +62,6 @@ window.addEventListener('scroll', hideShowMenu);
 fillMenu();
 putImage();
 eventListenerSet();
-
 
 
 function menuDropDown() {
@@ -150,7 +149,7 @@ function scrollToElement() {
     console.log(scrollTargetNumber);
     let scrollTarget = '.' + menuOptionsArray[scrollTargetNumber].split(' ').join('_');
     console.log(scrollTarget);
-    document.querySelector(scrollTarget).scrollIntoView({ behavior: "smooth" });
+    document.querySelector(scrollTarget).scrollIntoView(true)({ behavior: "smooth" });
     if (scrollTargetNumber === '2') {
 
         back.style.bottom = '3rem';
@@ -158,6 +157,9 @@ function scrollToElement() {
         console.log('lol', back.style.width);
 
     }
+    mobileArrowIsVisible === false ? mobileArrowIsVisible = true : mobileArrowIsVisible = false;
+
+    // mobileArrowIsVisible === true;
 }
 
 function eventListenerSet() {
