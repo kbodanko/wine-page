@@ -115,7 +115,7 @@ function scrollToElement() {
     console.log(scrollTargetNumber);
     let scrollTarget = '.' + menuOptionsArray[scrollTargetNumber].split(' ').join('_');
     console.log(scrollTarget);
-    document.querySelector(scrollTarget).scrollIntoView(true)({ behavior: "smooth" });
+    document.querySelector(scrollTarget).scrollIntoView({ behavior: "smooth" });
     if (scrollTargetNumber === '2') {
 
         back.style.bottom = '3rem';
