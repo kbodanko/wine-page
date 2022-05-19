@@ -8,7 +8,7 @@
 Functions, functions and one more time css:)
 
 **Project describe:**
-My project of vineyard website. I focus on aesthetics, good user experience and convenient solutions. And a little bit of animation. Comfortable menu showing up dynamically and there is a 'back to top' arrow. The page allows to collapse and expand some content. Content for repeating elements (menu options, articles, images) is added dynamically used a loop. Fully responsive.
+My project of vineyard website. I focused on aesthetics, good user experience and convenient solutions. And a little bit of animation. Comfortable menu showing up dynamically and there is a 'back to top' arrow. The page allows to collapse and expand some content. Content for repeating elements (menu options, articles, images) is added dynamically used a loop. Fully responsive.
 
 **Project objective:**
 Creation of a smooth, user-friendly website.
