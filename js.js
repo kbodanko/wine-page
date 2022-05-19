@@ -1,29 +1,3 @@
-// document.querySelector('#submit_button').addEventListener('click', contactLoad(backToCon));
-// function backToCon() {
-//     document.querySelector('.contact').scrollIntoView({ behavior: "smooth" });
-// }
-// function contactLoad(callback) {
-//     location = 'file:///C:/Users/kasia/Desktop/wine_page/index.html';
-// }
-// contactLoad(backToCon);
-
-// btn.addEventListener('click', () => {
-//     alert('You clicked me!');
-
-//     let pElem = document.createElement('p');
-//     pElem.textContent = 'This is a newly-added paragraph.';
-//     document.body.appendChild(pElem);
-//   });
-
-//   const btn = document.querySelector('button');
-// btn.addEventListener('click', () => {
-//   alert('You clicked me!');
-
-//   let pElem = document.createElement('p');
-//   pElem.textContent = 'This is a newly-added paragraph.';
-//   document.body.appendChild(pElem);
-// });
-
 //vid animation//
 
 let vid = document.querySelector('.videoId');
@@ -45,9 +19,6 @@ let articlesContentWraper = document.createElement('div');
 articlesContentWraper.className = '.article_content_wraper';
 let mediaQuery = window.matchMedia('(max-width: 770px)');
 let back = document.querySelector('.back_to_top_bg');
-
-// let menuMediaQuery = window.matchMedia('(max-width: 770px)');
-
 let LoremIpsum = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
 localStorage.setItem("vOneLocalStorage", articleList);
 
@@ -55,7 +26,6 @@ window.addEventListener('scroll', vineyardVisibleArticleFade);
 back.addEventListener('click', scrollToTop);
 document.querySelector('#read_more_button').addEventListener('click', putArticle);
 document.querySelector('.menu').addEventListener('click', scrollToElement);
-// document.querySelector('#submit_button').addEventListener('click', setContactBgHeight);
 mobileArrow.addEventListener('click', menuDropDown);
 window.addEventListener('scroll', hideShowMenu);
 
@@ -87,10 +57,6 @@ function vineyardVisibleArticleFade() {
     if (vineyardIsVisible) {
         document.getElementById('vineyard').style = 'animation: fadeIn 2s ease';
     }
-    // else {
-    //     document.getElementById('vineyard').classList.remove('animate__fadeInDown');
-    // }
-
     if (articleWraperIsVisible) {
         document.querySelectorAll('.article').forEach(element => {
             element.classList.add('animate__fadeInLeft');
@@ -237,10 +203,8 @@ function putImage() {
 }
 
 function putArticle() {
-    console.log(articleList.length);
     if (articleList.length > 0) {
         document.querySelector('#read_more_button').classList.add('clicked_button');
-        console.log(articleList);
         articlesContentWraper.remove();
         articlesContentWraper = document.createElement('div');
     }
@@ -258,7 +222,6 @@ function putArticle() {
     }
     articleListId = articleList.map(el => Number(el.slice(-1)));
     for (let i = 0; i < articleListId.length; i++) {
-        console.log(document.querySelector('#picId' + articleListId[i]).firstChild.style.display);
         if (document.querySelector('#picId' + articleListId[i]).firstChild.style.display === 'block') {
             let allArticleWraper = document.createElement('div');
             allArticleWraper.className = 'all_article_wraper';
@@ -284,7 +247,6 @@ function putArticle() {
             let articleImgSrc = articlePics[articleListId[i]];
         } else {
             articleListId.splice(articleListId.indexOf(articleListId[i]), 1);
-            console.log('slice', articleListId);
         }
         document.querySelector('.close_article').addEventListener('click', function () {
             articlesContentWraper.remove();
