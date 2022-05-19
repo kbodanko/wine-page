@@ -11,4 +11,9 @@ Functions, functions and one more time css:)
 My project of vineyards website. I focus on aesthetics, good user experience and convenient solutions. And a little bit of animation. Comfortable menu showing up dynamically and there is a 'back to top' arrow. The page allows to collapse and expand some content. Content for repeating elements (menu options, articles, images) is added dynamically used a loop. Fully responsive.
 
 **Project objective:**
-To test comprehension of JavaScript objects and object-oriented constructs and  to get some practice with using objects and object-oriented techniques in a real world context.
+Creation of a smooth, user-friendly website.
+
+**I learned and/or practised while writing the project:**
+- The beginnings in graphics (my first logo :))
+- Experiments on various items and how to implement it (background video, 'filling' menu fields)
+- A lot of css - grid, animation, media query
